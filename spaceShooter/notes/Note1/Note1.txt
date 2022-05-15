@@ -1,0 +1,52 @@
+Alt S - Sprite
+Alt O - Object
+Script criação completa game
+1 - Criando nosso player
+	1.1 importando a sprite do player - ok
+	1.2 criando ojb + atribundo spr - ok
+	1.3 mover player com wasd dentro do step - ok
+	1.4 refatorando codigo de movimentação - ok 
+
+2 - Ajuste dimenção da Room + View port - feito
+	2.1 criando uma view port e camera para jogo - ok
+	2.1 Ajustando as dimensões para view ser maior e o viewport menor - ok
+	
+	
+3 - Atirando.
+	3.1 importando tiro 1 player - ok
+	3.2 criando objeto tiro 1 player - ok
+	3.3 fazer tiro ir para cima - ok
+	3.4 quando apertar espaço, atira - ok
+	3.5 aplicar efeito ao tiro - ok
+		3.5.1 - criando o efeito grande depois ficar pequeno - ok
+	3.5 destrir tiro qdo sair da tela - ok
+
+4 - Criando Primeiro inimigo
+	4.1 importendo sprite pouvo - ok
+	4.2 criando objeto - ok
+	4. fazendo ele ir para baixo - ok
+
+5 - Fazendo Inimigo polvo roxo atirar
+	5.1 Importando sprite tiro polvo roxo - ok
+	5.2 criando obj tiro polvo roxo - ok
+	5.3 fazendo o tiro ir para baixo - ok
+	5.4 fazer inimigo atorar sozinho - ok
+	5.5 efeito no tiro - ok
+	
+(Criação de metodo)
+
+6- fazendo tiro do player acertar inimigo
+	6.1 Se destruir ao acertar inimigo; ok
+	6.2 criar impacto tiro do player
+
+############################################################################################
+ERROR in
+action number 1
+of  Step Eventobj_inimigo_polvo_roxo
+for object obj_tiro_player:
+
+Variable <unknown_object>.drop_item(100026, -2147483648) not set before reading it.
+ at gml_Script_anon_gml_Object_obj_tiro_player_Create_0_266_gml_Object_obj_tiro_player_Create_0 (line 16) -        drop_item(50);
+############################################################################################
+gml_Script_anon_gml_Object_obj_tiro_player_Create_0_266_gml_Object_obj_tiro_player_Create_0 (line 16)
+gml_Object_obj_tiro_player_Collision_obj_inimigo_polvo_roxo (line 4) - destroe_inimigo();
